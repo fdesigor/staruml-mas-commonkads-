@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROFILE version="1.0">
+<HEADER>
+	<NAME>KnowledgeProfile</NAME> 
+	<DISPLAYNAME>Knowledge Profile</DISPLAYNAME>
+	<DESCRIPTION>Knowledge Profile to create model</DESCRIPTION>
+</HEADER>
+
+<BODY> 	  
+		<STEREOTYPELIST>
+			<STEREOTYPE> 
+				<NAME>agent</NAME> 
+				<DESCRIPTION>Agente</DESCRIPTION>
+				<BASECLASSES>
+					<BASECLASS>UMLPackage</BASECLASS>
+				</BASECLASSES>
+				<PARENT>alert</PARENT>
+				<ICON>imgs/agent.bmp</ICON>
+			</STEREOTYPE>
+			
+			<STEREOTYPE> 
+				<NAME>code</NAME> 
+				<DESCRIPTION>Terminal</DESCRIPTION>
+				<BASECLASSES>
+					<BASECLASS>UMLClass</BASECLASS>
+				</BASECLASSES>
+				<PARENT>code</PARENT>
+				<ICON>imgs/code.bmp</ICON>
+			</STEREOTYPE>
+			
+			<STEREOTYPE> 
+				<NAME>database</NAME> 
+				<DESCRIPTION>Banco de dados</DESCRIPTION>
+				<BASECLASSES>
+					<BASECLASS>UMLClass</BASECLASS>
+				</BASECLASSES>
+				<PARENT>database</PARENT>
+				<ICON>imgs/database.bmp</ICON>
+			</STEREOTYPE>
+			
+			<STEREOTYPE> 
+				<NAME>hardware</NAME> 
+				<DESCRIPTION>Hardware</DESCRIPTION>
+				<BASECLASSES>
+					<BASECLASS>UMLClass</BASECLASS>
+				</BASECLASSES>
+				<PARENT>hardware</PARENT>
+				<ICON>imgs/hardware.bmp</ICON>
+			</STEREOTYPE>
+			
+		</STEREOTYPELIST> 
+		
+		<TAGDEFINITIONSETLIST>
+			<TAGDEFINITIONSET>
+				<NAME>TemporalObj</NAME>
+				<BASECLASSES>
+					<BASECLASS>UMLAttribute</BASECLASS>
+				</BASECLASSES>
+				<TAGDEFINITIONLIST>
+					<TAGDEFINITION lock="False">
+						<NAME>temporalPrimitive</NAME>
+						<TAGTYPE>Enumeration</TAGTYPE>
+						<DEFAULTDATAVALUE>instant
+						</DEFAULTDATAVALUE>
+						<LITERALS>
+							<LITERAL>instant</LITERAL>
+							<LITERAL>interval</LITERAL>
+						</LITERALS>
+					</TAGDEFINITION>
+					<TAGDEFINITION lock="False">
+						<NAME>temporalType</NAME>
+						<TAGTYPE>Enumeration</TAGTYPE>
+						<DEFAULTDATAVALUE>valid_time
+						</DEFAULTDATAVALUE>
+						<LITERALS>
+							<LITERAL>valid_time</LITERAL>
+							<LITERAL>transaction_time
+							</LITERAL>
+							<LITERAL>bitemporal</LITERAL>
+						</LITERALS>
+					</TAGDEFINITION>
+				</TAGDEFINITIONLIST>
+			</TAGDEFINITIONSET>
+		</TAGDEFINITIONSETLIST>
+		
+	</BODY>
+</PROFILE>

@@ -1,0 +1,54 @@
+
+
+(notation
+  (onarrange
+    (mofsetattr view 'StereotypeDisplay' 'sdkNone')
+    (mofsetattr view 'SuppressOperations' true)
+    (mofsetattr view 'ShowProperty' false)
+    (mofsetattr view 'ShowOperationSignature' false)
+    (mofsetattr view 'ShowCompartmentStereotype' false)
+    (mofsetattr view 'ShowCompartmentVisibility' false)
+    (arrangeObject view)
+  )
+
+  (ondraw
+    // parent
+    (set isSuperType true)
+
+
+    // variable initialize
+    (set x left)
+    (set y top)
+    (set space 3)
+    (set w 0)
+
+    ///////////////////////////////////////////////////////
+    // draw name part
+    //
+
+
+    // shadow
+    (setbrushcolor 'clSilver')
+    (setbrushstyle 'bsSolid')
+    (setpencolor 'clSilver')
+    (if isSuperType
+      (roundrect (+ x 5) (+ y 5) (+ right 5) (+ bottom 5) 10 10))
+
+    (setbrushcolor 'clWhite')
+    (setbrushstyle 'bsSolid')
+    (setpencolor 'clBlack')
+  (if isSuperType
+      (roundrect x y right bottom 10 10))
+  
+(set name (mofattr model 'Name'))
+(set x left)
+(set y top)
+(set w right)
+(set z bottom)
+(set tw (/(textwidth name) 2))
+(set th (/(textheight name) 2))
+(textout (- (/(+ x w) 2) tw) (- (/(+ y z) 2) th) name)
+
+)
+)
+

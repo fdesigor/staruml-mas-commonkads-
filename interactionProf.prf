@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROFILE version="1.0">
+<HEADER>
+	<NAME>InteractionProfile</NAME> 
+	<DISPLAYNAME>Interaction Profile</DISPLAYNAME>
+	<DESCRIPTION>Interaction Profile to create model</DESCRIPTION>
+</HEADER>
+
+<BODY> 	  
+		<STEREOTYPELIST>	
+			<STEREOTYPE> 
+				<NAME>Agent</NAME> 
+				<DESCRIPTION>Agente</DESCRIPTION>
+				<BASECLASSES>
+					<BASECLASS>UMLObject</BASECLASS>
+				</BASECLASSES>
+				<PARENT>agent</PARENT>
+				<ICON>imgs/agent.bmp</ICON>
+			</STEREOTYPE>
+
+			<STEREOTYPE> 
+				<NAME>Boneco</NAME> 
+				<DESCRIPTION>Boneco</DESCRIPTION>
+				<BASECLASSES>
+					<BASECLASS>UMLObject</BASECLASS>
+				</BASECLASSES>
+				<PARENT>boneco</PARENT>
+				<ICON>imgs/bonecoagoravai.wmf</ICON>
+			</STEREOTYPE>
+			
+			
+			<STEREOTYPE> 
+				<NAME>Object</NAME> 
+				<DESCRIPTION>Objeto</DESCRIPTION>
+				<BASECLASSES>
+					<BASECLASS>UMLObject</BASECLASS>
+				</BASECLASSES>
+				<PARENT>object</PARENT>
+				<ICON>imgs/object.bmp</ICON>
+			</STEREOTYPE>
+
+			
+		</STEREOTYPELIST> 
+		
+		<TAGDEFINITIONSETLIST>
+			<TAGDEFINITIONSET>
+				<NAME>TemporalObj</NAME>
+				<BASECLASSES>
+					<BASECLASS>UMLAttribute</BASECLASS>
+				</BASECLASSES>
+				<TAGDEFINITIONLIST>
+					<TAGDEFINITION lock="False">
+						<NAME>temporalPrimitive</NAME>
+						<TAGTYPE>Enumeration</TAGTYPE>
+						<DEFAULTDATAVALUE>instant
+						</DEFAULTDATAVALUE>
+						<LITERALS>
+							<LITERAL>instant</LITERAL>
+							<LITERAL>interval</LITERAL>
+						</LITERALS>
+					</TAGDEFINITION>
+					<TAGDEFINITION lock="False">
+						<NAME>temporalType</NAME>
+						<TAGTYPE>Enumeration</TAGTYPE>
+						<DEFAULTDATAVALUE>valid_time
+						</DEFAULTDATAVALUE>
+						<LITERALS>
+							<LITERAL>valid_time</LITERAL>
+							<LITERAL>transaction_time
+							</LITERAL>
+							<LITERAL>bitemporal</LITERAL>
+						</LITERALS>
+					</TAGDEFINITION>
+				</TAGDEFINITIONLIST>
+			</TAGDEFINITIONSET>
+		</TAGDEFINITIONSETLIST>
+		
+	</BODY>
+</PROFILE>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <ADDIN>
+ <NAME>MCKD+ AddIn</NAME>
+ <DISPLAYNAME>MCKD+ Sample</DISPLAYNAME>
+ <COMPANY>ESOA, Inc.</COMPANY>
+ <COPYRIGHT>Copyright 2014 ESOA Software, Inc. All rights reserved.</COPYRIGHT>
+ <HELPFILE>http://www.esoa2014.com</HELPFILE>
+ <ICONFILE>ESSOA.ico</ICONFILE>
+ <ISACTIVE>True</ISACTIVE>
+ <MENUFILE>meu_menu.mnu</MENUFILE>
+ <VERSION>1.0.1.35</VERSION>
+</ADDIN>

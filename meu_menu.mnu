@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ADDINMENU addInID="StarUML.MeuMenuAddIn">
+ <BODY>
+ <MAINMENU>
+ <MAINITEM base="MODEL" caption="Menu MCKD+" availableWhen="PROJECT_OPENED"
+ script="MCKD+.js"/>
+ </MAINMENU>
+ </BODY>
+</ADDINMENU>

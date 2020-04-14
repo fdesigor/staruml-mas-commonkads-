@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APPROACH version="1.0">
+	<HEADER>
+		<NAME>Mas-CommonKADS++</NAME>
+		<DISPLAYNAME>Mas-CommonKADS++</DISPLAYNAME>
+		<DESCRIPTION>Extensão da Metodologia Mas-CommonKADS</DESCRIPTION>
+	</HEADER>
+	<BODY>
+		<IMPORTPROFILES>
+			<PROFILE>AML</PROFILE>
+			<PROFILE>KnowledgeProfile</PROFILE>
+		</IMPORTPROFILES>
+		
+		<MODELSTRUCTURE>
+			<PACKAGE name="Common">
+				<DIAGRAM name="Main" defaultDiagram="True"/>
+			</PACKAGE>
+			<MODEL name="Requirements Model">				
+				<PACKAGE name="Goal-based Requirements">
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="MentalDiagram" name="GBR Model"/>
+				</PACKAGE>
+				<PACKAGE name="Use Case Requirements">
+					<DIAGRAM type="UseCase" name="Use Case Model"/>
+				</PACKAGE>
+				<PACKAGE name="Enviroment Requirements">
+					<DIAGRAM type="UseCase" name="Enviroment Model"/>
+				</PACKAGE>
+			</MODEL>
+			<MODEL name="Task Model">				
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="TaskDiagram" name="Task Model"/>				
+			</MODEL>
+			<MODEL name="Role Model">				
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="AgentDiagram" name="Role Model"/>				
+			</MODEL>
+			<MODEL name="Resource Model">				
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="ResourceDiagram" name="Resource Model"/>				
+			</MODEL>
+			<MODEL name="Agent Model">				
+				<PACKAGE name="Agent Model Requirements">
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="AgentDiagram" name="Agent Model"/>					
+				</PACKAGE>
+			</MODEL>
+			
+			<MODEL name="Knowledge Model">
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="KnowledgeDiagram" name="Knowledge Model"/>
+			</MODEL>
+			
+			<MODEL name="Organization Model">				
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="AgentDiagram" name="Organization Model"/>				
+			</MODEL>
+			<MODEL name="Design Detailed Model">				
+					<DIAGRAM diagramTypeProfile="AML" diagramTypeName="MASDeploymentDiagram" name="Role Model"/>				
+			</MODEL>
+		</MODELSTRUCTURE>
+	
+	</BODY>
+</APPROACH>
